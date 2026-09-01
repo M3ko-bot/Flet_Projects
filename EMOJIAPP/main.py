@@ -28,14 +28,7 @@ def main(page: ft.Page):
     btn_right = ft.IconButton(ft.Icons.ARROW_RIGHT_SHARP, on_click=refresh_click)
     
     # the singular row of the app
-    row = ft.Row(
-        alignment=ft.MainAxisAlignment.CENTER, 
-        controls=[
-            btn_left,
-            input,
-            btn_right
-        ]
-    )
+    row = ft.Row(alignment=ft.MainAxisAlignment.CENTER, controls=[btn_left,input,btn_right])
     page.add(row)
     
 if __name__ == '__main__' :
